@@ -27,50 +27,53 @@
   <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
     <div class="w3-content">
       <h1 class="w3-center w3-jumbo" style="margin-bottom:64px"><img src="imagenes/preparar.png" width="80"> PEDIDOS CHEF</h1>
-      <div class="container">
-        <div class="row justify-content-around">
-          <div class="col-12 col-md-6">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- PRIMERA COLUMNA: POR PREPARAR -->
+          <div class="col-12 col-md-6 px-3">
             <div class="w3-row w3-center w3-border w3-border-dark-grey">
               <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
                 <div class="w3-col s12 tablink w3-padding-large w3-hover-red">🗒️ POR PREPARAR</div>
               </a>
             </div>
-            <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
-              <table class="table">
+            <div id="por-preparar" class="w3-container menu w3-padding-32 w3-white">
+              <table class="table table-sm">
                 <thead>
-                  <tr>
+                  <tr class="fs-6">
                     <th>Platillo</th>
-                    <th>Mesa</th>
-                    <th>Cambiar Estado</th>
+                    <th>Cantidad</th>
+                    <th>Cliente</th>
+                    <th>Obs.</th>
+                    <th>Accion</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody class="small">
                   <!-- aqui va el listado --> 
-                  <!-- aqui va el listado -->
                 </tbody>
               </table>
             </div>
           </div>
-          <div class="col-12 col-md-6">
+          
+          <!-- SEGUNDA COLUMNA: PREPARANDO -->
+          <div class="col-12 col-md-6 px-3">
             <div class="w3-row w3-center w3-border w3-border-dark-grey">
               <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
                 <div class="w3-col s12 tablink w3-padding-large w3-hover-red">🍵 PREPARANDO ...</div>
               </a>
             </div>
-            <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
-              <table class="table">
+            <div id="preparando" class="w3-container menu w3-padding-32 w3-white">
+              <table class="table table-sm">
                 <thead>
-                  <tr>
+                  <tr class="fs-6">
                     <th>Platillo</th>
-                    <th>Mesa</th>
-                    <th>Cambiar Estado</th>
+                    <th>Cantidad</th>
+                    <th>Cliente</th>
+                    <th>Accion</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <!-- aqui va el listado -->
+                <tbody class="small">
                   <!-- aqui va el listado -->
                 </tbody>
-                
               </table>
             </div>
           </div>

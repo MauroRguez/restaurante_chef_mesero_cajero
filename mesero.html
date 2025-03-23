@@ -26,54 +26,57 @@
   <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
     <div class="w3-content">
         <h1 class="w3-center w3-jumbo" style="margin-bottom:64px"><img src="imagenes/mesa.png" width="80"> ENTREGAR A MESAS</h1>
-        <div class="container">
-          <div class="row justify-content-around">
-            <div class="col-12 col-md-6">
+        <div class="container-fluid px-4">
+          <div class="row gx-4">
+            <!-- Columna Por Entregar -->
+            <div class="col-md-6 mb-4">
               <div class="w3-row w3-center w3-border w3-border-dark-grey">
                 <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
                   <div class="w3-col s12 tablink w3-padding-large w3-hover-red">🗒️ POR ENTREGAR</div>
                 </a>
               </div>
-              <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
-                <table class="table">
-                  <thead>
-                    <tr>
+              <div id="por-entregar" class="w3-container menu w3-padding-32 w3-white" style="min-height: 400px;">
+                <table class="table table-hover">
+                  <thead class="table-light">
+                    <tr class="fs-4">
                       <th>Platillo</th>
-                      <th>Mesa</th>
-                      <th>Cambiar Estado</th>
+                      <th>Cant</th>
+                      <th>Cliente</th>
+                      <th>Accion</th>
                     </tr>
                   </thead>
                   <tbody>
                     <!-- aqui va el listado --> 
-                    <!-- aqui va el listado -->
                   </tbody>
                 </table>
               </div>
             </div>
-            <div class="col-12 col-md-6">
+            
+            <!-- Columna Entregado -->
+            <div class="col-md-6 mb-4">
               <div class="w3-row w3-center w3-border w3-border-dark-grey">
                 <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
                   <div class="w3-col s12 tablink w3-padding-large w3-hover-red">✅ ENTREGADO</div>
                 </a>
               </div>
-              <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
-                <table class="table">
-                  <thead>
-                    <tr>
+              <div id="entregado" class="w3-container menu w3-padding-32 w3-white" style="min-height: 400px;">
+                <table class="table table-hover">
+                  <thead class="table-light">
+                    <tr class="fs-4">
                       <th>Platillo</th>
-                      <th>Mesa</th>
-                      <th>Estado</th>
+                      
+                      <th>Cliente</th>
+                      <th>Accion</th>
                     </tr>
                   </thead>
                   <tbody>
                     <!-- aqui va el listado -->
-                    <!-- aqui va el listado -->
                   </tbody>
-                  
                 </table>
               </div>
             </div>
           </div>
+        </div>
     </div>
   </div>
 
